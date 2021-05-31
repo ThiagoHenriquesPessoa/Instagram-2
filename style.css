@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body{    
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(199, 199, 199);
+    margin: 0;
+    padding: o;
+    display: flex;    
+    justify-content: center;    
+}
+
+
+
+.bloco-principal{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 1024px;
+    height: 100vh;
+}
+
+.ladoEsquerdo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.ladoEsquerdo img{
+    height: 43rem;
+}
+
+.ladoDireito{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;  
+    width: 100%;
+    min-height: 25rem;  
+}
+
+.group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: white;
+    width: 400px; 
+      
+    padding: 1.3rem 0;
+    border: 1px solid lightgray ;
+    margin: 10px;
+}
+
+.group:nth-child(1){
+    min-height: 19rem;
+}
+
+.Instagram-Logo{
+    height: 3rem;
+}
+
+.imagemPerfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.imagemPerfil img{
+    height: 10rem;
+}
+
+.instagram-login{
+    background-color:  #0095f6;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;    
+    margin-top: 1rem;
+}
+
+.instagram-logout{
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.not-account{
+    color: rgb(160,160,160);
+}
+
+.link-blue{
+    color: #0095f6;
+}
+
+.get-the-app{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    width: 450px;        
+    padding: 1.3rem 0;
+}
+
+.download{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;    
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;      
+}
+
+.app-download{    
+    height: 4rem;
+    width: 14rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1){
+    background-image: url('./imagens/botao-appstore.png');
+}
+
+.app-download:nth-child(2){
+    background-image: url('./imagens/botao-googleplay.png');
+}
+
+@media (max-width: 1024px){
+    .bloco-principal{
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px){
+    .bloco-principal{
+        width: 90%;        
+    }
+
+    .ladoEsquerdo{
+        display: none;
+    }
+
+    .ladoDireito{
+        width: 100%;
+    }
+}
